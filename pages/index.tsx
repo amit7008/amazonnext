@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -15,6 +14,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to Amazon Softwares
         </h1>
+        <div className="blogs">
+          <div className="blogItem">
+            <h1>How to learn Javascript</h1>
+          </div>
+        </div>
 
         
        
