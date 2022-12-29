@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const Service =(props) =>{
     return(
         <>
@@ -11,7 +11,7 @@ const Service =(props) =>{
         <div className="serviceContent">
             <h3 className="serviceHeading">{props.heading}</h3>
             <p className="serviceDescription">{props.description}</p>
-            <Link to={props.sericeLink} className="srmore" >Learn More</Link>
+            <Link href={props.sericeLink} className="srmore" >Learn More</Link>
         </div>
     </div>
 </div>

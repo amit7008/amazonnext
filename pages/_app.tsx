@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import 'bootstrap/dist/css/bootstrap.css';
-//import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/globals.css';
 import Header from '../component/Header';
 import Footer from '../component/Footer';

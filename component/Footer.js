@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 import Image from "next/image";
+import { FaFacebookF,FaTwitter,FaLinkedinIn,FaInstagram,FaSkype } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -38,10 +39,10 @@ const Footer = () => {
                                                 <p>amazonsoftwares@gmail.com</p>
                                                 <p>+90 155 92666</p>
                                                 <div className="abSocial">
-                                                    <a target="_blank" href="https://www.facebook.com/"> <i className="bi bi-facebook"></i></a>
-                                                    <a target="_blank" href="https://twitter.com/?lang=en"> <i className="bi bi-twitter"></i></a>
-                                                    <a target="_blank" href="https://www.linkedin.com/signup"><i className="bi bi-linkedin"></i> </a>
-                                                    <a target="_blank" href="https://www.instagram.com/"><i className="bi bi-instagram"></i> </a>
+                                                    <a target="_blank" href="https://www.facebook.com/"><FaFacebookF /></a>
+                                                    <a target="_blank" href="https://twitter.com/?lang=en"><FaTwitter /></a>
+                                                    <a target="_blank" href="https://www.linkedin.com/signup"><FaLinkedinIn /></a>
+                                                    <a target="_blank" href="https://www.instagram.com/"><FaInstagram /></a>
                                                 </div>
                                             </div>
                                             </aside> </div>

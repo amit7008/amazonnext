@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Banner from '../component/Banner';
+import Link from 'next/link';
 
 import {BsCheck2} from 'react-icons/bs';
-import {HiOutlineArrowNarrowRight} from '../../node_modules/react-icons/hi';
+import {HiOutlineArrowNarrowRight} from 'react-icons/hi';
 import { FaBullhorn } from "react-icons/fa";
 import {CgWebsite} from "react-icons/cg"; 
 import {FaLaptopCode} from 'react-icons/fa';
@@ -29,7 +30,7 @@ export default function Home() {
       <div className="container">
         <div className="SecLayerimg move_anim clearfix">
 
-        <Image src='/img/S2.png' alt="Amazon Softwares" />
+        <Image src='/img/S2.png' alt="Amazon Softwares" width={1687} height={665} />
         </div>
         <div className="home-about-us-content_wrapper">
           <div className="row">
@@ -42,17 +43,17 @@ export default function Home() {
             <div className="listItemWrapper">
             <ul className="listItem">
 <li>
-<i className="amaz-check"></i>
+<i className="amaz-check"><BsCheck2 /></i>
 Research your niche and competitors. </li>
 <li>
-<i className="amaz-check"></i>
+<i className="amaz-check"><BsCheck2 /></i>
 Create content that gets your business found online. </li>
 <li>
-<i className="amaz-check"></i>
+<i className="amaz-check"><BsCheck2 /></i>
 Increase your online presence.Drive organic traffic and lead generation. </li>
 </ul>
 </div>
-<Link href="/about" className="azBtn in_right">About Us<i className="amaz-arrow"></i></Link>
+<Link href="/about" className="azBtn in_right">About Us<i className="amaz-arrow"><HiOutlineArrowNarrowRight /></i></Link>
             </div>
            
             <div className="col-5">
@@ -80,7 +81,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
       <div className="row">
         <div className="col-md-3">
         <Service 
-            icon={<i className="bi bi-window-sidebar"></i>}
+            icon={<CgWebsite/>}
             heading={"Web Design"}
             description={"Digital marketing reaches targeted audience in an affordable and measurable way"}
             sericeLink={"/about"}
@@ -88,7 +89,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
         </div>
         <div className="col-md-3">
         <Service 
-            icon={}
+            icon={<FaLaptopCode/>}
             heading={"Web Development"}
             description={"Digital marketing reaches targeted audience in an affordable and measurable way"}
             sericeLink={"/about"}
@@ -96,7 +97,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
         </div>
         <div className="col-md-3">
         <Service 
-            icon={}
+            icon={<FaBullhorn/>}
             heading={"Digital Marketing"}
             description={"Digital marketing reaches targeted audience in an affordable and measurable way"}
             sericeLink={"/about"}
@@ -104,7 +105,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
         </div>
         <div className="col-md-3">
         <Service 
-            icon={}
+            icon={<MdOutlineScreenSearchDesktop/>}
             heading={"SEO & Marketing"}
             description={"Digital marketing reaches targeted audience in an affordable and measurable way"}
             sericeLink={"/about"}
@@ -154,7 +155,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
           </div>
 
           <div className="col-md-6">
-            <Image src={Image42} />
+            <Image src='/img/4-2.png' alt='No Image' width={638} height={562} />
           </div>
         </div>
       </div>
@@ -162,9 +163,7 @@ Increase your online presence.Drive organic traffic and lead generation. </li>
        
       </main>
 
-      <footer className={styles.footer}>
-       Copywrite @ 2022 Amazon Softwares
-      </footer>
+      
     </div>
     </>
   )
